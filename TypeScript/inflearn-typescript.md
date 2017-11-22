@@ -89,5 +89,4 @@ TypeScript 는 Javascript의 Superset이다
 
 ## 참고
 
-  - [git - 간편 안내서](https://rogerdudler.github.io/git-guide/index.ko.html)
-  - [Git 활용 (기본적인 사용법)](http://jeremyko.blogspot.kr/2012/07/git.html)
+  - []()
