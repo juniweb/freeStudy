@@ -1,9 +1,9 @@
 # FreeStudy
-자유롭게 배운것을 정리하는 공간
+자유롭게 배운것을 정리하는 공간.
 
 ## Contents
   - [Javascript](https://github.com/juniweb/freeStudy/tree/master/Javascript)
-  - [TypeScript](https://github.com/juniweb/freeStudy/tree/master/Typescript)
+  - [TypeScript](https://github.com/juniweb/freeStudy/tree/master/TypeScript)
   - [AngularJS](https://github.com/juniweb/freeStudy/tree/master/AngularJS)
   - [Java](https://github.com/juniweb/freeStudy/tree/master/Java)
   - [Spring](https://github.com/juniweb/freeStudy/tree/master/Spring)
