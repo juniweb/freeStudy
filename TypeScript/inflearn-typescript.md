@@ -66,6 +66,56 @@ TypeScript 는 Javascript의 Superset이다
 
 ## Compiler Options
 
+### TypeScript Config File(tsconfig.json) Option
+[tsconfig json](http://json.schemastore.org/tsconfig)
+
+### 최상위 프로퍼티
+[Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+[Typescript 컴파일 옵션](http://blog.naver.com/PostView.nhn?blogId=skout90&logNo=221036082289&parentCategoryNo=&categoryNo=72&viewDate=&isShowPopularPosts=true&from=search)
+
+### types, typeRoots
+
+> typeRoots와 types는 type definition(d.ts) 파일을 찾을 수 있는 디렉토리 위치를 지정
+
+```
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules"
+    ],
+    "types": [
+      "types.d3"
+    ]
+  }
+}
+```
+
+### target 과 lib
+
+  - target
+    - 빌드 결과물의 Script 버전. 
+    - Default 는 es3
+  - lib
+    - 기본 type definition 라이브러리. 
+      - 'es3' 는 lib.d.ts
+      - 'es5' 는 dom, es5, scripthost
+      - 'es6' 는 dom, es6, dom.iterable, scripthost  
+
+### outDir, outFile
+
+  - outDir : 컴파일 파일의 디렉토리 지정
+  - outFile : 컴파일 파일 위치 지정. 1 개 파일.
+
+### module
+
+> 컴파일 결과물을 어떤 모둘 표준을 사용할 것인가
+
+  - 'es6' 는 es6
+  - 'es6'가 아니면 commonJS
+  - AMD 나 System 사용하려면, outFile 지정
+  - es6 es2015 사용하려면, target 이 'es5 이하
+
+ 
 ## TypeScript Basic Types
 
 ## var, let, const
@@ -89,4 +139,5 @@ TypeScript 는 Javascript의 Superset이다
 
 ## 참고
 
-  - []()
+  - [TypeScript Quick start](https://www.typescriptlang.org/docs/tutorial.html)
+  - [Typescript 2.0 options : typeRoots, types, rootDirs](https://medium.com/@iamssen/typescript-2-0-options-typeroots-types-rootdirs-d82e261dcc8c)
