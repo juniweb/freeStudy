@@ -118,11 +118,77 @@ TypeScript 는 Javascript의 Superset이다
  
 ## TypeScript Basic Types
 
+### 기본 데이터 타입
+
+  - EcmaScript 기본 자료형
+    - Boolean
+    - Number
+    - String
+    - Null
+    - Undefined
+    - Sysbol (EcmaScript6 추가)
+    - Array : Object 형 
+  - 몇가지 타입 제공
+    - Any
+    - Void
+    - Never
+    - Enum
+    - Tuple : Object 형 -> 잘 사용하지 않음
+	
+
 ## var, let, const
 
 ## Type assertions, Type alias
 
 ## Interface
+
+  - 인터페이스는 **타입체크를 위해 사용되며 일반변수, 함수, 클래스**에 사용할 수 있다
+  - 인퍼페이스는 멤버변수외 메소드를 가질 수 있다는 점에서 클래스와 유사하나 직접 인스턴스를 생성할 수 없다. 
+
+### Interface - Basic
+  - 일반 변수의 타입으로 사용할 수 있다. 새로운 자료형을 정의하는 것과 유사하다.
+ 
+```
+interface Person {
+	name : string,
+	age : number
+}
+
+const person: Person = {
+    name : 'juniweb',
+	age : 20   
+}
+```
+
+### Interface - Optional property
+
+  - 선택적 프로퍼티는 프로퍼티명 뒤에 `?` 를 붙이며 생략하여도 에러가 발생하지 않는다.
+
+```
+interface Person {
+	name : string,
+	age? : number
+}
+
+const person: Person = {
+    name: 'juniweb'   
+}
+```
+
+### Interface - Optional property - Indexable
+   
+```
+interface Person {
+    [index: string]: string;
+}
+
+const person: Person = {
+    name : 'juniweb',
+    job : 'programmer'   
+}
+```
+
+
 
 ## Class
 
@@ -141,3 +207,4 @@ TypeScript 는 Javascript의 Superset이다
 
   - [TypeScript Quick start](https://www.typescriptlang.org/docs/tutorial.html)
   - [Typescript 2.0 options : typeRoots, types, rootDirs](https://medium.com/@iamssen/typescript-2-0-options-typeroots-types-rootdirs-d82e261dcc8c)
+  - [[poiemaWeb] 12.5 TypeScript - Interface ](http://poiemaweb.com/typescript-interface)
