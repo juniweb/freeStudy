@@ -3,9 +3,9 @@
  - 강사 : 이웅재
  - [인프런 - 타입스크립트 코리아 : 기초세미나](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%94%EB%A6%AC%EC%95%84-1705-%EA%B8%B0%EC%B4%88-%EC%84%B8%EB%AF%B8%EB%82%98/)
  - 강의 자료
-   - http://slides.com/woongjae/deck-8
-   - http://slides.com/woongjae/deck-8-14
-   - http://slides.com/woongjae/deck-8-15  
+   - [http://slides.com/woongjae/deck-8](http://slides.com/woongjae/deck-8)
+   - [http://slides.com/woongjae/deck-8-14](http://slides.com/woongjae/deck-8-14)
+   - [http://slides.com/woongjae/deck-8-15](http://slides.com/woongjae/deck-8-15)  
 
 
 ## TypeScript Overview
