@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
+
 import { TestComponent } from './test.component';
 import { Sample1Component } from './sample1/sample1.component';
 import { Sample2Component } from './sample2/sample2.component';
@@ -20,7 +22,7 @@ import { ChildComponent } from './child/child.component';
     Sample3Component,
     GrandComponent,
     ParentComponent,
-    ChildComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -17,57 +17,45 @@ import {
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit, OnChanges, AfterContentInit, AfterViewInit, AfterContentChecked, AfterViewChecked {
-  @Input() childName;
-  @Input() childAge;
-  @Input() eventName;
+  @Input() name;
+  @Input() age;
 
-  @Output() childEvent = new EventEmitter();
+  @Output() next = new EventEmitter();
 
-  inputValue = '';
-
-  events = [];
-
-  constructor() { }
-
-  childClick(text, event) {
-    console.log(text);
-    console.log(event);
-    this.inputValue = text;
+  constructor() {
+    console.error('constructor');
   }
 
-  // 프로퍼티 초기화된 직후
   ngOnInit() {
-    this.events.push('ngOnInit');
-
+    console.error('ngOnInit');
     setInterval(() => {
-      console.log('Event call..');
-      this.childEvent.emit();
+      this.next.emit();
     }, 3000);
   }
 
-  // 최초 초기화 때 / Input 프로퍼티가 변경될 때
   ngOnChanges() {
-    this.events.push('ngOnChanges');
+    console.error('ngOnChanges');
   }
 
-  // ngContent 사용 시 자식이 초기화 된 직후
   ngAfterContentInit() {
-    this.events.push('ngAfterContentInit');
+    console.log('ngAfterContentInit');
   }
 
-  // 템플릿이 모두 초기화 되었을 때
   ngAfterViewInit() {
-    this.events.push('ngAfterViewInit');
+    console.log('ngAfterViewInit');
   }
 
-  // ngContent 를 통해 HTML 을 받을 때
   ngAfterContentChecked() {
-    this.events.push('ngAfterContentChecked');
+    console.log('ngAfterContentChecked');
   }
 
-  // 템플릿에 바인딩된 값이 변경되었을 때
   ngAfterViewChecked() {
-    this.events.push('ngAfterViewChecked');
+    console.log('ngAfterViewChecked');
+  }
+
+  click(text, event) {
+    console.log(text);
+    console.log(event);
   }
 
 }

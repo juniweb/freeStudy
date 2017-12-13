@@ -6,16 +6,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-  @Input() parentAge;
-  @Output() parentEvent = new EventEmitter();
+
+  @Input() age;
+  @Output() upAge = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  parentNext() {
-    this.parentEvent.emit();
+  next() {
+    this.upAge.emit();
   }
 
 }

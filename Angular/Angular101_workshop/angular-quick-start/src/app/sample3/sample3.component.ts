@@ -8,8 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class Sample3Component implements OnInit {
 
   @Input() test;
-  @Output() downEvent = new EventEmitter();
-
+  @Output() custom = new EventEmitter();
   disabled = true;
 
   constructor() { }
@@ -17,8 +16,8 @@ export class Sample3Component implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.disabled = false;
-      this.downEvent.emit();
-    }, 2000);
+      this.custom.emit();
+    }, 3000);
   }
 
 }

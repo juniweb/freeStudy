@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrandComponent implements OnInit {
 
-  grandAge = 35;
+  age = 35;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  grandNext() {
-    this.grandAge = this.grandAge + 1;
+  up() {
+    this.age = this.age + 1;
   }
 
 }

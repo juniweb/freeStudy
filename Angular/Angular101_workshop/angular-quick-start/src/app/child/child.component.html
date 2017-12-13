@@ -1,11 +1,4 @@
 <p>child works!</p>
-<h2>{{ childName }} / {{ childAge }}</h2>
+<h2>{{ name }} / {{ age }}</h2>
 <input #myInput type="text">
-<button (click)="childClick(myInput.value, $event)">Input 값 가져오기</button>
-<p></p>
-<hr>
-<h3>inputValue : {{ inputValue }}</h3>
-<p></p>
-<hr>
-<h2>Angular Life Cycle</h2>
-<h3 *ngFor="let eventName of events">{{ eventName }}</h3>
+<button (click)="click(myInput.value, $event)">버튼</button>

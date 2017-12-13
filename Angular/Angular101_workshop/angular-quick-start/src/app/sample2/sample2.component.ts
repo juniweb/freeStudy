@@ -6,19 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample2.component.css']
 })
 export class Sample2Component implements OnInit {
-  name = 'huimori';
+  name = 'juni';
 
   constructor() { }
 
   ngOnInit() {
     setTimeout(() => {
-      this.name = 'juniweb';
+      this.name = 'Hani';
     }, 2000);
   }
 
   click(e) {
-    this.name = 'button click...';
     console.log(e);
+    this.name = 'Nim...';
   }
 
 }

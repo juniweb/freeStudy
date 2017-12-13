@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '안녕하세요';
+  title = '안녕하세요. Juni';
   names = [
-    'Angular',
-    'React',
-    'Vue'
+    '임희준',
+    'juniweb',
+    'huimori'
   ];
 
   custom() {
