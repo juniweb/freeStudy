@@ -1,0 +1,24 @@
+<h2>Directive</h2>
+<h2 *ngIf="isVisible">안녕하세요!!!</h2>
+<button (click)="toggle()">Toggle</button>
+<br/>
+
+<hr style="border-top: 1px solid blue;">
+<h2>Pipe</h2>
+<p>{{ {'name': 'juniweb'} }}</p>
+<p>{{ {'name': 'juniweb'} | json }}</p>
+<p>{{ 'juniwebzzang' | slice:0:7 }}</p>
+<p>{{ 'juniweb' | uppercase }}</p>
+<p>{{ 'juniWEB' | lowercase }}</p>
+<p>{{ 'juniWEB' | uppercase | lowercase }}</p>
+<p>{{ 20171209 | date: 'yyyy-MM-dd' }}</p>
+<p>{{ 20171209 | date: 'yyyy년 MM월 dd일' }}</p>
+<!-- <p>{{ data | async }}</p> -->
+<br/>
+
+<hr style="border-top: 1px solid blue;">
+
+<div *ngFor="let user of users">
+  <h2>{{ user.login}}</h2>
+  <img [src]="user.avatar_url" width="200">
+</div>
