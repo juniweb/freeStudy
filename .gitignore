@@ -1,0 +1,12 @@
+
+package-lock.json
+
+### dependencies ###
+node_modules/
+bower_components/
+
+
+### Angular ###
+
+# e2e
+/e2e/
